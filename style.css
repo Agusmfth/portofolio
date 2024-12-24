@@ -18,6 +18,18 @@
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
+/* Ensure body takes up at least the full height */
+html, body {
+    height: 100%; /* Make sure both html and body take up the full height of the screen */
+    margin: 0; /* Remove any default margins */
+    display: flex;
+    flex-direction: column; /* Make the body a column layout */
+}
+/* Footer should be pushed to the bottom */
+footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
 
 *::selection {
     background: var(--main-color);
