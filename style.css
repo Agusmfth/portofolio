@@ -10,6 +10,22 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+/* #contact {
+    min-height: 100vh;
+} */
+/* Awal, section dalam kondisi tersembunyi dan sedikit geser ke bawah */
+.contact {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Saat class active ditambahkan, animasi fade-in dan slide-up */
+.contact.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 :root {
     --bg-color: #fdfdfd;
